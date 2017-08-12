@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 const qrcode = require('qrcode');
 const dotenv = require('dotenv');
+const authenticate = require('./routes/authenticate');
 
 // ***INIT***
 // starting express
@@ -18,12 +19,14 @@ app.set('view engine', 'pug');
 console.log(process.env.APPVERSION);
 
 // ***routes***
-app.get('/', (req,res) =>{
+app.get('/', (req,res) => {
   res.render('index', {
     version: process.env.APPVERSION,
     env: process.env.ENV
   });
 })
+
+app.use('/userservices', authenticate)
 
 // ***start listening***
 app.listen(3000, _ => {
