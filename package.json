@@ -1,0 +1,21 @@
+{
+  "name": "authentic8",
+  "version": "0.7.6",
+  "description": "Authenticate 3rd party services without passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "authenticate",
+    "otp",
+    "qrcode"
+  ],
+  "author": "Rohan M",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3",
+    "qrcode": "^0.9.0"
+  }
+}
