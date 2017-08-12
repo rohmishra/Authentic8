@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    block heads
+    link(src='/css/base.css', rel='stylesheet')
+    meta(appname='Authentic8')
+  body
+    header#head_bar
+      .title Authentic8
+      ul
+        li Login
+        li register
+    block content
+    footer
+      h3 &copy; Rohan Mishra.
+      h4 Authentic8 v#{version}.
+      if env = 'development'
+        p.env_mode development environment.
