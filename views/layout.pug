@@ -1,15 +1,18 @@
 doctype html
 html
   head
+    link(href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet")
+    link(href='/css/base.css', rel='stylesheet')
+    meta(name='appname' content='Authentic8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     block heads
-    link(src='/css/base.css', rel='stylesheet')
-    meta(appname='Authentic8')
   body
-    header#head_bar
-      .title Authentic8
-      ul
-        li Login
-        li register
+    header
+      #head_bar
+        .title Authentic8
+        ul
+          li Login
+          li register
     block content
     footer
       h3 &copy; Rohan Mishra.
