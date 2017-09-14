@@ -4,7 +4,7 @@
   "description": "Authenticate 3rd party services without passwords",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true"
   },
   "keywords": [
     "authenticate",
@@ -17,8 +17,14 @@
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
+    "nightmare": "^2.10.0",
     "pug": "^2.0.0-rc.3",
     "qrcode": "^0.9.0",
+    "sqlite3": "^3.1.9",
     "twilio": "^3.6.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
   }
 }
