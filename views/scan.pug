@@ -1,0 +1,11 @@
+extends layout
+block heads
+  title Scan to continue
+block content
+  .container
+    .qrcode-holder
+      h3 "qrcode will be rendered here..."
+      canvas#qrcode
+        
+  script(src="/js/qrcode.js")
+  script(src="/js/generator.js")

@@ -4,6 +4,7 @@ const express = require('express');
 const qrcode = require('qrcode');
 const dotenv = require('dotenv');
 const authenticate = require('./routes/authenticate');
+const api_generate = require('./routes/generate');
 const twilio = require('twilio');
 
 // ***INIT***
@@ -27,7 +28,8 @@ app.get('/', (req,res) => {
   });
 })
 
-app.use('/userservices', authenticate)
+app.use('/userservices', authenticate);
+app.use('/api', api_generate);
 
 // ***start listening***
 app.listen(3000, _ => {
