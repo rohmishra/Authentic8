@@ -31,6 +31,6 @@ app.use( '/userservices', authenticate );
 app.use( '/api', api_generate );
 
 // ***start listening***
-app.listen( 3120, _ => {
-  console.log( 'Authentic8 started on port 3000' )
-} )
+app.listen( ( process.env.PORT || 3120 ), _ => {
+  console.log( 'Setting up add on port ' + ( process.env.PORT || 3000 ) );
+} );
