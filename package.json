@@ -4,7 +4,8 @@
   "description": "Authenticate 3rd party services without passwords",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "start": "node index.js"
   },
   "keywords": [
     "authenticate",
