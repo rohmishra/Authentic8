@@ -5,7 +5,6 @@ const qrcode = require( 'qrcode' );
 const dotenv = require( 'dotenv' );
 const authenticate = require( './routes/authenticate' );
 const api_generate = require( './routes/generate' );
-const twilio = require( 'twilio' );
 
 // ***INIT***
 // starting express
