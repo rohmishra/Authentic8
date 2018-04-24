@@ -19,7 +19,8 @@ let serviceURL = baseURL + 'api/get_code';
 console.log( document.cookie.split );
 let appid = '5aded9ec734d1d0b3c2f3cec'; // Get dynamically from post request to page in future.
 let sessionid = 0001; // Get dynamically from post request to page in future.
-let appkey = document.cookie.valueOf( 'key' ) || '579823yr3uwey';
+let appkey = document.cookie.valueOf( 'key' )
+  .split( '=' ) || '579823yr3uwey';
 
 let data = {
   appid: appid,
