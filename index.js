@@ -17,6 +17,12 @@ dotenv.load();
 app.set( 'views', path.join( __dirname, 'views' ) );
 app.set( 'view engine', 'pug' );
 
+app.use( cors( {
+  allowedOrigins: [
+        'authentic8-ui.herokuapp.com', 'localhost:3120', 'localhost:3110', '127.0.0.1:8887'
+    ]
+} ) )
+
 console.log( process.env.APPVERSION );
 
 // ***routes***
