@@ -17,7 +17,7 @@ let codeHolder = document.getElementById( 'qrcode' );
 let baseURL = 'https://authentic8-testdb-server.herokuapp.com/';
 let serviceURL = baseURL + 'api/get_code';
 console.log( document.cookie.split );
-let appid = 0001; // Get dynamically from post request to page in future.
+let appid = '5aded9ec734d1d0b3c2f3cec'; // Get dynamically from post request to page in future.
 let sessionid = 0001; // Get dynamically from post request to page in future.
 let data = { appid: appid }
 fetch( serviceURL, {
