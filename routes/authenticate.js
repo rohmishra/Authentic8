@@ -1,5 +1,6 @@
 const express = require( 'express' );
 const dotenv = require( 'dotenv' );
+const bodyParser = require( 'body-parser' );
 const router = express.Router();
 
 // parse incoming requests
