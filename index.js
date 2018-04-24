@@ -11,6 +11,7 @@ const cors = require( 'express-cors' );
 // starting express
 const app = express();
 // set static content location
+express.static.mime.default_type = "text/css";
 app.use( express.static( path.join( __dirname, 'static' ) ) )
 // Load .env
 dotenv.load();
