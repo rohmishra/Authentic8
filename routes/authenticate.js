@@ -20,6 +20,7 @@ router.route( '/register' )
 router.route( '/qrcode' )
   .post( ( req, res ) => {
     console.log( req.body.key );
+    res.cookie( 'key', req.body.key );
     res.render( 'scan', {
       version: process.env.APPVERSION,
       env: process.env.ENV
